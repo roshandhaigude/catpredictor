@@ -18,7 +18,7 @@ app.config['UPLOAD_FOLDER'] = "data/"
 def home():
     return render_template('index.html')
 
-@app.route('/predict',methods=['GET'])
+@app.route('/predict',methods=['GET','POST'])
 def predict():
     '''
     For rendering results on HTML GUI
